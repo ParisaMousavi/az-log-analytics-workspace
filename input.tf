@@ -5,7 +5,7 @@
 variable "sku" {
   description = "Log analytics workspace sku"
   type        = string
-  default     = "PerGB2018"
+  default     = "Free"
 
   validation {
     condition     = contains(["Free", "PerNode", "Premium", "Standard", "Standalone", "Unlimited", "PerGB2018"], var.sku)
