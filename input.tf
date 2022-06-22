@@ -16,5 +16,5 @@ variable "sku" {
 variable "retention_in_days" {
   description = "Log analytics workspace data rentention in days. Possible values for Free 7 days. Or range 30 - 730"
   type        = number
-  default     = 90
+  default     = 7
 }

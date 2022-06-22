@@ -9,10 +9,10 @@ variable "tags" {
   description = "(provided by Terragrunt)"
 }
 
-variable "resource_long_name" {
-  type        = string
-  description = "(provided by Terragrunt)"
-}
+# variable "resource_long_name" {
+#   type        = string
+#   description = "(provided by Terragrunt)"
+# }
 
 variable "resource_short_name" {
   type        = string
