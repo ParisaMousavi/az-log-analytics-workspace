@@ -1,8 +1,4 @@
-//
-// this file should contain all your resources
-//
-
-resource "azurerm_log_analytics_workspace" "main" {
+resource "azurerm_log_analytics_workspace" "this" {
   name                = "${var.resource_short_name}-ws"
   location            = var.resource_group_location
   resource_group_name = var.resource_group_name

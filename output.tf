@@ -1,3 +1,3 @@
-//
-// this file should contain all your output variables
-//
+output "id" {
+  value = azurerm_log_analytics_workspace.this.id
+}
