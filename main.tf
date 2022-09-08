@@ -7,7 +7,7 @@ resource "azurerm_log_analytics_workspace" "this" {
   tags = merge(
     var.additional_tags,
     {
-      created-by = "terraform"
+      created-by = "iac-tf"
     },
   )
 }
