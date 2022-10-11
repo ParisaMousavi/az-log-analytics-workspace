@@ -1,7 +1,3 @@
-//
-// this file should contain all your input variables
-//
-
 variable "sku" {
   description = "Log analytics workspace sku"
   type        = string
