@@ -7,5 +7,5 @@ output "name" {
 }
 
 output "containerinsights_sln_id" {
-  value = azurerm_log_analytics_solution.this.id
+  value = azurerm_log_analytics_solution.this[0].id
 }
