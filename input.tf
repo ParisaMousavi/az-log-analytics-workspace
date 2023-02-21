@@ -41,6 +41,38 @@ variable "additional_tags" {
 }
 
 variable "with_containerinsights_enabled" {
+  description = "This is for azurerm_log_analytics_solution"
+  type        = bool
+  default     = false
+}
+
+variable "internet_ingestion_enabled" {
+  type    = bool
+  default = true
+}
+
+variable "internet_query_enabled " {
+  type    = bool
+  default = true
+}
+
+variable "local_authentication_disabled" {
+  type    = bool
+  default = false
+}
+
+variable "allow_resource_only_permissions" {
+  type    = bool
+  default = true
+}
+
+variable "daily_quota_gb " {
+  description = "-1 (unlimited)"
+  type        = number
+  default     = 0.25
+}
+
+variable "cmk_for_query_forced" {
   type    = bool
   default = false
 }
