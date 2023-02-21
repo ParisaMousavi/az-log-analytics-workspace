@@ -51,7 +51,7 @@ variable "internet_ingestion_enabled" {
   default = true
 }
 
-variable "internet_query_enabled " {
+variable "internet_query_enabled" {
   type    = bool
   default = true
 }
@@ -66,7 +66,7 @@ variable "allow_resource_only_permissions" {
   default = true
 }
 
-variable "daily_quota_gb " {
+variable "daily_quota_gb" {
   description = "-1 (unlimited)"
   type        = number
   default     = 0.25
