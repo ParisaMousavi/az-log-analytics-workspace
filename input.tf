@@ -76,3 +76,9 @@ variable "cmk_for_query_forced" {
   type    = bool
   default = false
 }
+
+variable "log_analytics_workspace_id" {
+  description = "by default self-inject if not null will inject to other lAW"
+  type        = string
+  default     = null
+}
