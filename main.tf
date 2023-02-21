@@ -33,7 +33,7 @@ resource "azurerm_log_analytics_solution" "this" {
 }
 
 resource "azurerm_monitor_diagnostic_setting" "this" {
-  name                       = logs-metrics-2-workspace
+  name                       = "logs-metrics-2-workspace"
   target_resource_id         = azurerm_log_analytics_workspace.this.id
   log_analytics_workspace_id = var.log_analytics_workspace_id != null ? var.log_analytics_workspace_id : azurerm_log_analytics_workspace.this.id
 
